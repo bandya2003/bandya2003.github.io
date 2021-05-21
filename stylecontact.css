@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(#2b1055,#7597de);
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li
+{
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+  background: #fff;
+  color: #2b1055;
+}
+
+section img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+.contact-title
+{
+  margin-top: 100px;
+  padding: 10px 0 0 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-title
+h1
+{
+  font-size: 50px;
+  line-height: 40px;
+  transition: all 4s ease-in-out;
+}
+.contact-title
+h2{
+  font-size: 20px;
+  line-height: 60px;
+transition: all 4s ease-in;
+}
+.form-control
+{
+
+  width: 500px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input
+{
+  height: 45px;
+}
+form .submit
+{
+  background: #ff5722;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: auto;
+  margin-top: 20px;
+}
+
+form .submit:hover
+{
+  background-color: #f44336;
+  cursor: pointer;
+}
+.center
+{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 4px;
+  padding: 50px 0 50px;
+  color: #333;
+}
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #0072b1;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #0072b1;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}

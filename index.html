@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bandya2003</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="icon" href="favicon.ico.png">
+  </head>
+  <body>
+    <header>
+    <a href="#" class="logo">👀Hi</a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </header>
+    <section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Welcome Dosto</h2>
+    <a href="index.html" id="btn">Explore</a>
+    <img src="mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+      <h2>ABOUT ME</h2>
+      <br>
+      <div class="quote-text">
+        <br>
+        <blockquote>
+          <p> <q>I'm Sumant a First-year Computer Science undergraduate student at Mumbai University.
+              Nothing brings me more pleasure than making something out of nothing.
+              I also love the logic and structure of coding and always strive to write elegant and efficient code,
+              whether be it HTML,CSS or jQuery.
+              <br><br>
+
+              When I'm not coding or pushing pixels, you'd find me watching some webseries or brewing caffeine.
+            </q>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+  <script>
+   let stars = document.getElementById('stars');
+   let moon = document.getElementById('moon');
+   let mountains_behind = document.getElementById('mountains_behind');
+   let text = document.getElementById('text');
+   let btn = document.getElementById('btn');
+   let mountains_front = document.getElementById('mountains_front');
+   let header = document.querySelector('header')
+  window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    moon.style.top = value * 1.05 + 'px';
+    mountains_behind.style.top = value * 0.5 + 'px';
+    mountains_front.style.top = value * 0 + 'px' ;
+    text.style.marginRight = value * 4 + 'px' ;
+    text.style.marginTop = value * 1.5 + 'px';
+    btn.style.marginTop = value * 1.5 + 'px';
+    header.style.top = value * 0.5 + 'px';
+  })
+</script>
+  </body>
+</html>
