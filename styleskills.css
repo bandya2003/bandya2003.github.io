@@ -129,7 +129,7 @@ html,body{
 .bar .progress-line.css span{
   width: 78%;
 }
-.bar .progress-line.jquery span{
+.bar .progress-line.javascript span{
   width: 25%;
 }
 .bar .progress-line.java span{
@@ -176,7 +176,7 @@ html,body{
 .progress-line.css span::after{
   content: "78%";
 }
-.progress-line.jquery span::after{
+.progress-line.javascript span::after{
   content: "25%";
 }
 .progress-line.java span::after{
